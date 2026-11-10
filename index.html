@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | George</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -12,28 +12,121 @@
       <h1>Portfolio</h1>
     </header>
 
-    <nav class="navbar">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Work</a>
-      <a href="">Resume</a>
-      <a href="">Contact</a>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <!-- Main Content -->
     <main>
-      <section>
+      <!-- About Section -->
+      <section id="about">
         <h2>About</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           molestias nesciunt, sunt corporis facere iusto eveniet! Temporibus sit
           nam rem?
         </p>
-        <img src="./images/abstract-pink-blue-gradient.jpg" 
-        alt="Abstract gradient with flowing pink, red, purple, and light blue colors."
-        width="200"
-        height="200">
+        <img
+          src="./images/abstract-pink-blue-gradient.jpg"
+          alt="Abstract gradient with flowing pink, red, purple, and light blue colors."
+          width="200"
+          height="200"
+        />
       </section>
+
+      <!-- Work section -->
+      <section id="work">
+        <h2>Work</h2>
+        <table class="projects-table">
+          <thead>
+            <tr>
+              <th scope="col">Project Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Link</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Abtract</td>
+              <td>Abtract-Images</td>
+              <td><a href="#">Abstract Image Link</a></td>
+            </tr>
+
+            <tr>
+              <td>Design</td>
+              <td>Designed-Images</td>
+              <td><a href="#">Design Image Link</a></td>
+            </tr>
+
+            <tr>
+              <td>Styling</td>
+              <td>Styled-Images</td>
+              <td><a href="#">Styled Image Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+      </section>
+
+      <!-- audio file -->
+      <section aria-labelledby="audio-heading">
+        <h2 id="audio-heading">Audio</h2>
+        <audio controls>
+          <source
+            src="./resources/03 Got to Choose (Live, 1975) [2025 Remaster].flac"
+            type="audio/flac"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume">
+        <h2>Resume</h2>
+        <a
+          href="./resources/GD_Resume.docx"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View My Resume</a
+        >
+      </section>
+
+      <!-- Contact Form -->
+      <form>
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" />
+        <br />
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="fullname"
+          placeholder="Enter your email"
+        />
+
+        <!-- Message Field -->
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type message Here"
+          rows="1"
+          required
+        ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+      <br /><br />
+      <!-- Footer -->
     </main>
+
+    <footer>Copyright 2026. All rights reserved</footer>
   </body>
 </html>
