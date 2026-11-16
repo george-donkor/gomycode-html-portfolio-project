@@ -1,0 +1,135 @@
+/* page reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Header section*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica;
+  align-items: center;
+  background-color: #182740;
+}
+
+header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 20px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+main {
+  font-family: Arial, Helvetica;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+main section {
+  margin-bottom: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+  color: rgb(23, 23, 78);
+  margin-bottom: 20px;
+}
+/* about section */
+#about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #475569;
+}
+
+#about img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 12px;
+}
+/* work section */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects-table th,
+.projects-table td {
+  padding: 15px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+.projects-table th {
+  background-color: #172337;
+  color: white;
+}
+
+.projects-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* resume section */
+#resume a {
+  display: inline-block;
+  background-color: #182740;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+/* contact form */
+#contact form {
+  max-width: 600px;
+}
+
+#contact label {
+  display: block;
+  font-weight: 600px;
+  margin-bottom: 8px;
+}
+
+#contact input,
+#contact textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#contact button {
+  /* display: inline-block; */
+  background-color: #172337;
+  color: white;
+  padding: 12px 24%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+/* Footer section */
+footer {
+  text-align: center;
+}
